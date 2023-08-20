@@ -4,7 +4,7 @@
 
 namespace Gspeak
 {
-	enum VoiceEffect {
+	enum class VoiceEffect {
 		None,
 		Radio,
 		Water,

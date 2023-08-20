@@ -5,7 +5,7 @@
 
 namespace Gspeak
 {
-	enum Command
+	enum class Command
 	{
 		Failure = -2,
 		Success = -1,
