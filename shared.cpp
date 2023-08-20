@@ -86,15 +86,11 @@ namespace Gspeak
 
 	void Shared::closeStatus()
 	{
-		if (hMapFileStatus == NULL)
-			throw std::nullptr_t();
 		closeMap(&hMapFileStatus, &statusView);
 	}
 
 	void Shared::closeClients()
 	{
-		if (hMapFileClients == NULL)
-			throw std::nullptr_t();
 		closeMap(&hMapFileClients, &clientView);
 	}
 
