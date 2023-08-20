@@ -15,12 +15,10 @@ namespace Gspeak
 			<< "radio_volume_noise = " << arg.radioEffect.noise << '\n'
 			<< "upward = " << arg.upward[0] << ' ' << arg.upward[1] << ' ' << arg.upward[2] << '\n'
 			<< "forward = " << arg.forward[0] << ' ' << arg.forward[1] << ' ' << arg.forward[2] << '\n'
-			//<< "password = " << arg.password << '\n'
 			<< "status = " << arg.status << '\n'
 			<< "talking = " << arg.talking << '\n'
-			<< "command = " << arg.command << '\n';
-			//<< "channelName = " << arg.channelName << '\n'
-			//<< "channelId = " << arg.channelId;
+			<< "command = " << (int)arg.command << '\n'
+			<< "commandArgs = " << arg.commandArgs << '\n';
 		return os;
 	}
 

@@ -65,12 +65,12 @@ namespace Gspeak
 			{
 				*hMapFile = CreateFileMapping(INVALID_HANDLE_VALUE, NULL, PAGE_READWRITE, 0, buf_size, name);
 				if (*hMapFile == NULL)
-					return CREATION_FAILED;
+					return HMAP_RESULT::CREATION_FAILED;
 			}
 			else if (code == 5)
-				return ACCESS_DENIED;
+				return HMAP_RESULT::ACCESS_DENIED;
 			else
-				return UNEXPECTED_ERROR;
+				return HMAP_RESULT::UNEXPECTED_ERROR;
 		}
 
 		//view
@@ -78,10 +78,10 @@ namespace Gspeak
 		if (*view == NULL)
 		{
 			closeMap(hMapFile, view);
-			return VIEW_FAILED;
+			return HMAP_RESULT::VIEW_FAILED;
 		}
 
-		return SUCCESS;
+		return HMAP_RESULT::SUCCESS;
 	}
 
 	void Shared::closeStatus()
