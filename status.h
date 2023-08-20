@@ -32,7 +32,7 @@ namespace Gspeak
 		//char password[PASS_BUF];
 		bool status;
 		bool talking;
-		int command;
+		Command command;
 		char commandArgs[CMD_ARGS_BUF];
 
 		//char channelName[NAME_BUF];

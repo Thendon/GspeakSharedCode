@@ -14,6 +14,16 @@ namespace Gspeak
 		UNEXPECTED_ERROR
 	};
 
+	enum Command
+	{
+		Failure = -2,
+		Success = -1,
+		Clear,
+		Rename,
+		ForceMove,
+		ForceKick
+	};
+
 	class Shared {
 	public:
 		static Client* clients();
