@@ -9,7 +9,9 @@ namespace Gspeak
 	{
 		Failure = -2,
 		Success = -1,
-		Clear,
+
+		Clear = 0,
+
 		Rename,
 		ForceMove,
 		ForceKick
@@ -39,14 +41,10 @@ namespace Gspeak
 		float upward[3];
 		float forward[3];
 		RadioEffect radioEffect;
-		//char password[PASS_BUF];
 		bool status;
 		bool talking;
 		Command command;
 		char commandArgs[CMD_ARGS_BUF];
-
-		//char channelName[NAME_BUF];
-		//int channelId;
 	};
 
 	std::ostream& operator<<(std::ostream& os, Status const& arg);;

@@ -1,6 +1,5 @@
 #pragma once
 
-//#define RADIO_BUF 32
 #define PASS_BUF 32
 #define PLAYER_MAX 128
 #define NAME_BUF 32
