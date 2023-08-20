@@ -25,11 +25,13 @@ namespace Gspeak
 	};
 
 	struct WaterEffect {
-
+		double scale;
+		double smooth;
 	};
 
 	struct WallEffect {
-
+		double scale;
+		double smooth;
 	};
 
 	struct Status {
@@ -41,6 +43,8 @@ namespace Gspeak
 		float upward[3];
 		float forward[3];
 		RadioEffect radioEffect;
+		WaterEffect waterEffect;
+		WallEffect wallEffect;
 		bool status;
 		bool talking;
 		Command command;
