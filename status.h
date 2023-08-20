@@ -5,6 +5,16 @@
 
 namespace Gspeak
 {
+	enum Command
+	{
+		Failure = -2,
+		Success = -1,
+		Clear,
+		Rename,
+		ForceMove,
+		ForceKick
+	};
+
 	struct RadioEffect {
 		short downsampler;
 		short distortion;
