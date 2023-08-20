@@ -6,7 +6,7 @@
 
 namespace Gspeak
 {
-	enum HMAP_RESULT {
+	enum class HMAP_RESULT {
 		SUCCESS,
 		ACCESS_DENIED,
 		CREATION_FAILED,
