@@ -27,11 +27,13 @@ namespace Gspeak
 	struct WaterEffect {
 		double scale;
 		double smooth;
+		float boost;
 	};
 
 	struct WallEffect {
 		double scale;
 		double smooth;
+		float boost;
 	};
 
 	struct Status {
