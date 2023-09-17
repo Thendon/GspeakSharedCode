@@ -18,7 +18,6 @@ namespace Gspeak
 		float pos[3];
 		float volume_gm;
 		float volume_ts;
-		//bool radio;
 		VoiceEffect effect;
 		bool talking;
 	};
