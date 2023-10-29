@@ -5,7 +5,7 @@ namespace Gspeak
 	std::ostream& operator<<(std::ostream& os, Client const& arg)
 	{
 		os << "clientID = " << arg.clientID <<
-			", pos = " << arg.pos[0] << ' ' << arg.pos[0] << ' ' << arg.pos[0] <<
+			", pos = " << arg.pos[0] << ' ' << arg.pos[1] << ' ' << arg.pos[2] <<
 			", volume_gm = " << arg.volume_gm <<
 			", volume_ts = " << arg.volume_ts <<
 			", effect = " << (int)arg.effect <<
